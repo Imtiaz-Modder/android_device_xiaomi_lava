@@ -18,6 +18,7 @@ DEVICE_PATH := device/xiaomi/lava
 
 # Inherit from mt6768-common
 $(call inherit-product, device/xiaomi/mt6768-common/mt6768-common.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/lava/lava-vendor.mk)
@@ -50,3 +51,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sku_props/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_ss_vendor.prop \
     $(DEVICE_PATH)/configs/sku_props/build_dsds_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_dsds_vendor.prop
+    
+    ARCANA_MAINTAINER := Imtiaz
+    WITH_GAPPS := true
+    USE_PIXEL_CHARGER_IMAGES := true
+    TARGET_FACE_UNLOCK_SUPPORTED := true
+    TARGET_SUPPORTS_BLUR := true
+    
