@@ -18,7 +18,7 @@ DEVICE_PATH := device/xiaomi/lava
 
 # Inherit from mt6768-common
 $(call inherit-product, device/xiaomi/mt6768-common/mt6768-common.mk)
-$(call inherit-product, vendor/aosp/common.mk)
+#$(call inherit-product, vendor/aosp/common.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/lava/lava-vendor.mk)
