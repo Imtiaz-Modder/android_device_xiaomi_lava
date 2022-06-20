@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/corvus_lava.mk
+   $(LOCAL_DIR)/cipher_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_lava-user \
-    corvus_lava-userdebug \
-    corvus_lava-eng
+    cipher_lava-user \
+    cipher_lava-userdebug \
+    cipher_lava-eng
