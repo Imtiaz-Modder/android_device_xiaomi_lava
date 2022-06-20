@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
+$(call inherit-product, vendor/syberia/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -37,7 +37,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lava
-PRODUCT_NAME := cipher_lava
+PRODUCT_NAME := syberia_lava
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
 
@@ -48,9 +48,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="lancelot-user 11 RP1A.200720
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Redmi/lancelot_global/lancelot:11/RP1A.200720.011/V12.0.1.0.RJCMIXM:user/release-keys
-CIPHER_MAINTAINER := IMTIAZ
+
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_BLUR := true/false
 TARGET_SUPPORTS_QUICK_TAP := true
-CIPHER_GAPPS := true
+WITH_GAPPS := true
