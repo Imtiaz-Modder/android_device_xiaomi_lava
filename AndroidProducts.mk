@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/styx_lava.mk
+   $(LOCAL_DIR)/voltage_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    styx_lava-user \
-    styx_lava-userdebug \
-    styx_lava-eng
+    voltage_lava-user \
+    voltage_lava-userdebug \
+    voltage_lava-eng
