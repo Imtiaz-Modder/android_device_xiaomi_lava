@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/spiceos_lava.mk
+   $(LOCAL_DIR)/aosp_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    spiceos_lava-user \
-    spiceos_lava-userdebug \
-    spiceos_lava-eng
+    aosp_lava-user \
+    aosp_lava-userdebug \
+    aosp_lava-eng
